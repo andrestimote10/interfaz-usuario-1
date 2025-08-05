@@ -169,7 +169,8 @@
           <label for="keep-session">Mantener sesión iniciada</label>
         </div>
 
-        <a href="dashboard.html" class="btn-login" style="display: block; 	text-align: center; padding: 12px; background-color: #fce303; 	border-radius: 5px; font-weight: bold; text-decoration: none; color: 	black;">Iniciar sesión</a>
+        <a href="dashboard.html" onclick="confirmRedirect('dashboard.html', 'acceder al panel de control')" class="btn-login" style="display: block; text-align: center; padding: 12px; background-color: #fce303; border-radius: 5px; font-weight: bold; text-decoration: none; color: black;">Iniciar sesión</a>
+
 
 
 
@@ -190,7 +191,16 @@
       </div>
     </div>
   </div>
+<script>
+  function confirmRedirect(url, descripcion) {
+    const confirmacion = confirm(`Estás a punto de ${descripcion}. ¿Deseas continuar?`);
+    if (confirmacion) {
+      window.location.href = url;
+    }
+  }
+</script>
 </body>
 </html>
+
 
 
