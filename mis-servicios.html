@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Mis Servicios</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f9f9f9;
+      margin: 0;
+      padding: 0;
+    }
+
+    header {
+      background-color: #003366;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+
+    .container {
+      max-width: 1000px;
+      margin: 30px auto;
+      background: white;
+      padding: 30px;
+      border-radius: 10px;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    }
+
+    h2 {
+      margin-bottom: 20px;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 20px;
+    }
+
+    th, td {
+      padding: 12px;
+      text-align: left;
+      border-bottom: 1px solid #ddd;
+    }
+
+    th {
+      background-color: #f2f2f2;
+    }
+
+    .estado {
+      padding: 5px 10px;
+      border-radius: 5px;
+      font-weight: bold;
+    }
+
+    .pendiente {
+      background-color: #fff3cd;
+      color: #856404;
+    }
+
+    .completado {
+      background-color: #d4edda;
+      color: #155724;
+    }
+
+    .cancelado {
+      background-color: #f8d7da;
+      color: #721c24;
+    }
+
+    .back-link {
+      display: inline-block;
+      margin-top: 30px;
+      text-decoration: none;
+      color: #333;
+    }
+
+    .back-link:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Mis Servicios</h1>
+  </header>
+
+  <div class="container">
+    <h2>Historial de servicios</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>#</th>
+          <th>Tipo de servicio</th>
+          <th>Fecha</th>
+          <th>Detalles</th>
+          <th>Estado</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>1</td>
+          <td>Envío de paquetes</td>
+          <td>2025-08-01</td>
+          <td>Sobre a Bogotá</td>
+          <td><span class="estado completado">Completado</span></td>
+        </tr>
+        <tr>
+          <td>2</td>
+          <td>Recarga celular</td>
+          <td>2025-08-03</td>
+          <td>Claro $10.000</td>
+          <td><span class="estado pendiente">Pendiente</span></td>
+        </tr>
+        <tr>
+          <td>3</td>
+          <td>Pago de servicios</td>
+          <td>2025-08-04</td>
+          <td>Factura de energía</td>
+          <td><span class="estado cancelado">Cancelado</span></td>
+        </tr>
+      </tbody>
+    </table>
+
+    <a href="dashboard.html" class="back-link">← Volver al inicio</a>
+  </div>
+
+</body>
+</html>

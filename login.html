@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Registro</title>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body, html {
+      margin: 0;
+      padding: 0;
+      height: 100%;
+      font-family: 'Segoe UI', sans-serif;
+    }
+
+    .fondo {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      background: url("fondo-personalizado.jpg") no-repeat center center / cover;
+      z-index: -1;
+    }
+
+    .contenedor-principal {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100%;
+    }
+
+    .formulario {
+      background-color: white;
+      border-radius: 12px;
+      padding: 40px 30px;
+      box-shadow: 5px 5px 15px rgba(0,0,0,0.2);
+      width: 90%;
+      max-width: 700px;
+    }
+
+    .formulario h2 {
+      text-align: center;
+      font-size: 32px;
+      margin-bottom: 30px;
+      color: #333;
+    }
+
+    form {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 20px;
+    }
+
+    .form-group {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .form-group.full {
+      grid-column: span 2;
+    }
+
+    label {
+      margin-bottom: 6px;
+      font-weight: 500;
+    }
+
+    input, select {
+      padding: 10px;
+      font-size: 14px;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+    }
+
+    .acciones {
+      grid-column: span 2;
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      margin-top: 20px;
+    }
+
+    .btn {
+      padding: 10px 30px;
+      border: none;
+      font-size: 14px;
+      border-radius: 8px;
+      color: white;
+      cursor: pointer;
+    }
+
+    .btn-crear {
+      background-color: #3e5bfd;
+    }
+
+    .btn-cancelar {
+      background-color: #f44336;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Fondo personalizado -->
+  <div class="fondo">
+    <!-- Aquí puedes usar una imagen de fondo o gradiente -->
+    <!-- Ejemplo con gradiente:
+    background: linear-gradient(to right, #5d60f2, #786bd9, #e6bfa3); -->
+  </div>
+
+  <div class="contenedor-principal">
+    <div class="formulario">
+      <h2>Registro</h2>
+      <form>
+        <div class="form-group">
+          <label for="nombres">Nombres</label>
+          <input type="text" id="nombres" placeholder="Pepito">
+        </div>
+        <div class="form-group">
+          <label for="telefono">Teléfono</label>
+          <input type="text" id="telefono" placeholder="310 123 4567">
+        </div>
+        <div class="form-group">
+          <label for="apellidos">Apellidos</label>
+          <input type="text" id="apellidos" placeholder="Perez Gimenez">
+        </div>
+        <div class="form-group">
+          <label for="correo">Correo electrónico</label>
+          <input type="email" id="correo" placeholder="example@example.com">
+        </div>
+        <div class="form-group">
+          <label for="ciudad">Ciudad</label>
+          <select id="ciudad">
+            <option value="">Seleccione</option>
+            <option value="Bogotá">Bogotá</option>
+            <option value="Medellín">Medellín</option>
+            <option value="Cali">Cali</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="contrasena">Contraseña</label>
+          <input type="password" id="contrasena" placeholder="********">
+        </div>
+        <div class="form-group full">
+          <label for="direccion">Dirección de residencia</label>
+          <input type="text" id="direccion" placeholder="Kr 1 # 10 a 11 norte">
+        </div>
+        <div class="form-group">
+          <label for="confirmar">Confirme contraseña</label>
+          <input type="password" id="confirmar" placeholder="********">
+        </div>
+        <div class="acciones">
+         <button type="button" class="btn btn-crear" onclick="location.href='registro-exitoso.html'">Crear cuenta</button>
+
+	<button type="button" class="btn btn-cancelar" 	onclick="location.href='home.html'">Cancelar</button>
+
+        </div>
+      </form>
+    </div>
+  </div>
+</body>
+</html>

@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Realizar Servicios</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f2f2f2;
+      margin: 0;
+      padding: 0;
+    }
+
+    header {
+      background-color: #003366;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+
+    .container {
+      max-width: 800px;
+      margin: 30px auto;
+      background: white;
+      padding: 30px;
+      border-radius: 10px;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    }
+
+    h2 {
+      margin-bottom: 20px;
+    }
+
+    form label {
+      display: block;
+      margin-bottom: 10px;
+      font-weight: bold;
+    }
+
+    form input, form select, form textarea {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 20px;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+    }
+
+    .btn {
+      background-color: #007bff;
+      color: white;
+      border: none;
+      padding: 12px 20px;
+      border-radius: 6px;
+      cursor: pointer;
+    }
+
+    .btn:hover {
+      background-color: #0056b3;
+    }
+
+    .back-link {
+      display: inline-block;
+      margin-top: 20px;
+      text-decoration: none;
+      color: #555;
+    }
+
+    .back-link:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Realizar Servicios</h1>
+  </header>
+
+  <div class="container">
+    <h2>Complete el formulario</h2>
+    <form action="#">
+      <label for="tipo">Tipo de servicio</label>
+      <select id="tipo" name="tipo">
+        <option value="envio">Envío de paquetes</option>
+        <option value="recarga">Recarga celular</option>
+        <option value="pago">Pago de servicios</option>
+        <option value="otro">Otro</option>
+      </select>
+
+      <label for="detalle">Detalles del servicio</label>
+      <textarea id="detalle" name="detalle" rows="4" placeholder="Describa el servicio que desea realizar..."></textarea>
+
+      <label for="nombre">Nombre del cliente</label>
+      <input type="text" id="nombre" name="nombre" placeholder="Ingrese su nombre completo">
+
+      <label for="telefono">Teléfono de contacto</label>
+      <input type="tel" id="telefono" name="telefono" placeholder="Ej: 3001234567">
+
+      <button type="submit" class="btn">Enviar solicitud</button>
+    </form>
+
+    <a href="home.html" class="back-link">← Volver al inicio</a>
+  </div>
+
+</body>
+</html>

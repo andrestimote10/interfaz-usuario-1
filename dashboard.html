@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>QuickFav - Servicios</title>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #f5f5f5;
+    }
+
+    header {
+      background-color: #ffffff;
+      padding: 10px 20px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      border-bottom: 2px solid #00aaff;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+
+    .logo {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .logo img {
+      width: 35px;
+    }
+
+    .logo span {
+      font-size: 22px;
+      font-weight: bold;
+      color: #333;
+    }
+
+    .search-bar input {
+      padding: 7px 12px;
+      border-radius: 20px;
+      border: 1px solid #ccc;
+      outline: none;
+      width: 200px;
+    }
+
+    nav {
+      display: flex;
+      align-items: center;
+      gap: 20px;
+    }
+
+    nav a {
+      text-decoration: none;
+      color: #333;
+      font-weight: 500;
+    }
+
+    .user-icons {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    main {
+      padding: 30px;
+    }
+
+    h2 {
+      margin-bottom: 20px;
+      color: #333;
+    }
+
+    .grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 3 columnas */
+  grid-template-rows: repeat(2, auto);  /* 2 filas */
+  gap: 20px;
+  justify-items: center;
+}
+
+
+    .card {
+      background-color: #fff;
+      border-radius: 12px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+
+    .card img {
+      width: 100%;
+      height: 140px;
+      object-fit: cover;
+    }
+
+    .card-body {
+      padding: 15px;
+    }
+
+    .card-title {
+      font-weight: bold;
+      margin-bottom: 10px;
+      color: #333;
+    }
+
+    .card-text {
+      font-size: 14px;
+      color: #555;
+      margin-bottom: 10px;
+      line-height: 1.4;
+    }
+
+    .card-footer {
+      padding: 10px 15px 15px;
+    }
+
+    .btn {
+      background-color: #5d60f2;
+      border: none;
+      color: white;
+      padding: 10px 15px;
+      width: 100%;
+      border-radius: 8px;
+      font-weight: bold;
+      cursor: pointer;
+      transition: background-color 0.2s;
+    }
+
+    .btn:hover {
+      background-color: #3a40d1;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+   <div class="logo-container">
+  <img src="img/Logo.jpg" alt="Logo de la empresa" class="logo">
+</div>
+
+<style>
+  .logo-container {
+    text-align: center;
+    margin-top: 10px;
+  }
+
+  .logo {
+    width: 200px; /* Aumenta este valor para hacerlo más grande */
+    max-width: 90%;
+    height: auto; /* Mantiene proporción */
+  
+  }
+</style>
+
+
+
+    <div class="search-bar">
+      <input type="text" placeholder="Buscar">
+    </div>
+
+    <nav>
+      <a href="realizar-servicios.html">Realizar servicios</a>
+      <a href="mis-servicios.html">Mis servicios</a>
+      <a href="historial.html">Historial</a>
+      <div class="user-icons">
+        <img src="img/logo_bolsa.jpg" alt="logo_bolsa" width="24"/>
+        <img src="img/logo_perfil.jpg" alt="logo_perfil" width="24"/>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+   <main>
+  <h2>Servicios disponibles</h2>
+  <div class="grid">
+    <!-- Tarjeta 1 -->
+    <div class="card">
+      <img src="img/Card1.jpg" alt="Card1" />
+      <div class="card-body">
+        <div class="card-title">Pago de recibo</div>
+        <div class="card-text">
+          ⏱ 30 - 40 min <br>
+          💰 $25.000 <br>
+          Tipo de recibo: <br>
+          Recorridos:
+        </div>
+      </div>
+      <div class="card-footer">
+        <button class="btn">Aceptar</button>
+      </div>
+    </div>
+
+    <!-- Tarjeta 2 -->
+    <div class="card">
+      <img src="img/Card2.jpg" alt="Card2" />
+      <div class="card-body">
+        <div class="card-title">Envío de paquetes</div>
+        <div class="card-text">
+          ⏱ 100 - 200 min <br>
+          💰 $50.000 <br>
+          Cantidad de paquetes: <br>
+          Recorridos:
+        </div>
+      </div>
+      <div class="card-footer">
+        <button class="btn">Aceptar</button>
+      </div>
+    </div>
+
+    <!-- Tarjeta 3 -->
+    <div class="card">
+      <img src="img/Card3.jpg" alt="Card3" />
+      <div class="card-body">
+        <div class="card-title">Envío de paquetes</div>
+        <div class="card-text">
+          ⏱ 100 - 200 min <br>
+          💰 $50.000 <br>
+          Cantidad de paquetes: <br>
+          Recorridos:
+        </div>
+      </div>
+      <div class="card-footer">
+        <button class="btn">Aceptar</button>
+      </div>
+    </div>
+
+    <!-- Tarjeta 4 -->
+    <div class="card">
+      <img src="img/Card4.jpg" alt="Card4" />
+      <div class="card-body">
+        <div class="card-title">Envío de paquetes</div>
+        <div class="card-text">
+          ⏱ 100 - 200 min <br>
+          💰 $50.000 <br>
+          Cantidad de paquetes: <br>
+          Recorridos:
+        </div>
+      </div>
+      <div class="card-footer">
+        <button class="btn">Aceptar</button>
+      </div>
+    </div>
+
+    <!-- Tarjeta 5 -->
+    <div class="card">
+      <img src="img/Card5.jpg" alt="Card5" />
+      <div class="card-body">
+        <div class="card-title">Pago de recibo</div>
+        <div class="card-text">
+          ⏱ 30 - 40 min <br>
+          💰 $25.000 <br>
+          Tipo de recibo: <br>
+          Recorridos:
+        </div>
+      </div>
+      <div class="card-footer">
+        <button class="btn">Aceptar</button>
+      </div>
+    </div>
+
+    <!-- Tarjeta 6 -->
+    <div class="card">
+      <img src="img/Card6.jpg" alt="Card6" />
+      <div class="card-body">
+        <div class="card-title">Pago de recibo</div>
+        <div class="card-text">
+          ⏱ 30 - 40 min <br>
+          💰 $25.000 <br>
+          Tipo de recibo: <br>
+          Recorridos:
+        </div>
+      </div>
+      <div class="card-footer">
+        <button class="btn">Aceptar</button>
+      </div>
+    </div>
+  </div>
+</main>
+
+</body>
+</html>

@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Historial</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #f5f6fa;
+      margin: 0;
+      padding: 0;
+    }
+
+    header {
+      background-color: #2f3640;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+
+    .container {
+      max-width: 1000px;
+      margin: 30px auto;
+      background-color: white;
+      padding: 30px;
+      border-radius: 12px;
+      box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+    }
+
+    h2 {
+      margin-bottom: 20px;
+      font-size: 24px;
+    }
+
+    .log-entry {
+      padding: 15px;
+      border-left: 4px solid #3498db;
+      background: #ecf0f1;
+      margin-bottom: 15px;
+      border-radius: 6px;
+    }
+
+    .log-entry h4 {
+      margin: 0 0 5px;
+      font-size: 18px;
+      color: #2c3e50;
+    }
+
+    .log-entry p {
+      margin: 0;
+      color: #555;
+    }
+
+    .date {
+      font-size: 13px;
+      color: #888;
+    }
+
+    .back-link {
+      display: inline-block;
+      margin-top: 30px;
+      text-decoration: none;
+      color: #333;
+    }
+
+    .back-link:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Historial de Actividades</h1>
+  </header>
+
+  <div class="container">
+    <h2>Últimas acciones realizadas</h2>
+
+    <div class="log-entry">
+      <h4>Servicio realizado: Envío de paquete</h4>
+      <p>Se realizó un envío de paquete a Medellín desde Cali.</p>
+      <p class="date">Fecha: 2025-08-03 10:15 AM</p>
+    </div>
+
+    <div class="log-entry">
+      <h4>Recarga realizada</h4>
+      <p>Recarga de $15.000 al número 3101234567 (Claro).</p>
+      <p class="date">Fecha: 2025-08-02 16:42 PM</p>
+    </div>
+
+    <div class="log-entry">
+      <h4>Pago de factura</h4>
+      <p>Factura de energía Codensa por valor de $98.500.</p>
+      <p class="date">Fecha: 2025-08-01 09:07 AM</p>
+    </div>
+
+    <a href="dashboard.html" class="back-link">← Volver al inicio</a>
+  </div>
+
+</body>
+</html>
