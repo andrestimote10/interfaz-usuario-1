@@ -103,11 +103,7 @@
 <body>
 
   <!-- Fondo personalizado -->
-  <div class="fondo">
-    <!-- Aquí puedes usar una imagen de fondo o gradiente -->
-    <!-- Ejemplo con gradiente:
-    background: linear-gradient(to right, #5d60f2, #786bd9, #e6bfa3); -->
-  </div>
+  <div class="fondo"></div>
 
   <div class="contenedor-principal">
     <div class="formulario">
@@ -151,13 +147,21 @@
           <input type="password" id="confirmar" placeholder="********">
         </div>
         <div class="acciones">
-         <button type="button" class="btn btn-crear" onclick="location.href='registro-exitoso.html'">Crear cuenta</button>
-
-	<button type="button" class="btn btn-cancelar" 	onclick="location.href='home.html'">Cancelar</button>
-
+          <button type="button" class="btn btn-crear" onclick="confirmRedirect('registro-exitoso.html', 'registrarte exitosamente')">Crear cuenta</button>
+          <button type="button" class="btn btn-cancelar" onclick="confirmRedirect('index.html', 'cancelar el registro y volver al inicio')">Cancelar</button>
         </div>
       </form>
     </div>
   </div>
+
+  <!-- Script para evitar cambios de contexto inesperados -->
+  <script>
+    function confirmRedirect(url, descripcion) {
+      const confirmacion = confirm(`Estás a punto de ${descripcion}. ¿Deseas continuar?`);
+      if (confirmacion) {
+        window.location.href = url;
+      }
+    }
+  </script>
 </body>
 </html>
